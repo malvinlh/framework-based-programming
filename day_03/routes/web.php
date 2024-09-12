@@ -1,6 +1,14 @@
 <?php
+namespace App\Http\Controller;
+use App\Http\Controllers\CalculatorController;
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Foundation\Bus\DispatchesJobs;
+use Illuminate\Routing\Controller as BaseController;
+use Illuminate\Foundation\Validation\ValidatesRequests;
+use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
+use Illuminate\Support\Facades\Input;
+
 
 Route::get('/', function () {
     return view('welcome');
@@ -10,7 +18,7 @@ Route::get('/kalkulator', function () {
     return view('BikinKalkulator');
 });
 
-Route::get('/kalkulator2', function(){
+Route::get('/kalkulator2', function () {
     return view('BikinKalkulator2');
 });
 
@@ -35,6 +43,13 @@ Route::get('/calc_2_submit', function () {
     }
 });
 
-Route::get('/kalkulator3', function(){
+Route::get('/kalkulator3', function () {
     return view('BikinKalkulator3');
 });
+
+Route::any('/kalkulator5', function () {
+    return view('BikinKalkulator5');
+});
+
+Route::get('/kalkulator4', [CalculatorController::class, 'index']);
+Route::post('/kalkulator4', [CalculatorController::class, 'calculate']);
