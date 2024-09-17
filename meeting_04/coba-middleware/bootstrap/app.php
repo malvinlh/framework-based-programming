@@ -15,11 +15,6 @@ return Application::configure(basePath: dirname(__DIR__))
     ->withMiddleware(function (Middleware $middleware) {
         // Global Middleware
         $middleware->append(Coba::class);
-        
-        // Route Middleware
-        $middleware->alias([
-            'mencoba' => Coba::class,
-        ]);
     })
     ->withExceptions(function (Exceptions $exceptions) {
         //

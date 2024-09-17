@@ -7,6 +7,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+// Route Middleware
 Route::get('/contoh', function () {
     echo "Route dipanggil";
-})->middleware('mencoba');
+})->middleware(Coba::class);
