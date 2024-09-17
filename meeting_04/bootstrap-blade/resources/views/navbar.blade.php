@@ -1,4 +1,3 @@
-<!-- resources/views/partials/navbar.blade.php -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container"> <!-- Menambahkan container untuk memberi jarak -->
     <a class="navbar-brand" href="/">CalculatorXYZ</a>
