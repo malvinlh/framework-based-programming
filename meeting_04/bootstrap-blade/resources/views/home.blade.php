@@ -7,7 +7,6 @@
     <h1>Welcome to the Home Page</h1>
     <p>Select a calculator below:</p>
 
-    <!-- Button links to different calculator pages -->
     <div class="mt-4">
         <a href="/GetCalc1" class="btn btn-primary btn-lg mb-2">Go to Calculator Get 1</a>
         <a href="/GetCalc2" class="btn btn-secondary btn-lg mb-2">Go to Calculator Get 2</a>
