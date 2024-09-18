@@ -2,4 +2,4 @@
 
 Create a simple `login`, `register`, and `logout` using Laravel with Bootstrap
 
-![gif](./DEMO.gif)
+![gif](./test.gif)
